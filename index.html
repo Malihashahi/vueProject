@@ -10,11 +10,11 @@
 
   <div id="app">
     
-     <img  v-bind:src="src" :alt="alt">
-     <a v-bind:href="href">vue.js</a>
+    <p v-if="number>5">if</p>
+    <p v-else-if ="number < 4"> else if</p>
+    <p v-else>else</p>
 
-
-   <span v-html="html"></span>
+    <span v-show="isstatus">show</span>
 
 
   </div>
