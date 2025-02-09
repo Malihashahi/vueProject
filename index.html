@@ -7,10 +7,16 @@
 <title>webpage</title>
 </head>
 <body>
- 
 
   <div id="app">
-      {{ fun()}}
+    
+     <img  v-bind:src="src" :alt="alt">
+     <a v-bind:href="href">vue.js</a>
+
+
+   <span v-html="html"></span>
+
+
   </div>
 
 
