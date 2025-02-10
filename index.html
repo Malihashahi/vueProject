@@ -10,12 +10,7 @@
 
   <div id="app">
     
-    <p v-if="number>5">if</p>
-    <p v-else-if ="number < 4"> else if</p>
-    <p v-else>else</p>
-
-    <span v-show="isstatus">show</span>
-
+    <p v-for="(name , index) in names" :key="index">{{index}}/{{name}}</p>
 
   </div>
 
