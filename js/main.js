@@ -2,8 +2,14 @@ Vue.createApp(
   {  
      data(){
         return{
-         names :['ali','sahar','sajad']
-        
+        name : 'bahar'
+        }
+     },
+     methods:{
+        update(){
+            setTimeout(() => {
+               this.name ='maliha'
+            }, 2000);
         }
      }
    }
