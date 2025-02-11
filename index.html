@@ -10,9 +10,8 @@
 
   <div id="app">
     
-    <h1 >{{name}}</h1>
-    <button @click.left="update($event,'nargis')">Update</button>
-  
+    <input v-model.lazy="name" type="text">
+    <p>{{name}}</p>
   </div>
 
 
