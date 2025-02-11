@@ -6,10 +6,10 @@ Vue.createApp(
         }
      },
      methods:{
-        update(){
-            setTimeout(() => {
-               this.name ='maliha'
-            }, 2000);
+        update(event,name){
+            
+               this.name =name
+               console.log(name,event)
         }
      }
    }

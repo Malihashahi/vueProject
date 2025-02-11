@@ -10,8 +10,9 @@
 
   <div id="app">
     
-    <h1 v-once>{{name}}</h1>
-    {{update()}}
+    <h1 >{{name}}</h1>
+    <button @click.left="update($event,'nargis')">Update</button>
+  
   </div>
 
 
