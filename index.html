@@ -5,13 +5,32 @@
 <meta  http-equiv="X-UA-Compatible" content="IE=edg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>webpage</title>
+<style>
+  .div{
+     background: black;
+     color: white;
+     padding: 10px;
+  }
+  .red{
+     background:red;
+  }
+  .blue{
+    background: blue;
+  }
+
+</style>
 </head>
 <body>
 
   <div id="app">
     
-    <input v-model.lazy="name" type="text">
-    <p>{{name}}</p>
+  <div 
+   class="div" 
+   :class="[colors.redClass ,colors.blueClass]"
+   
+   >
+    hello vue
+  </div>
   </div>
 
 

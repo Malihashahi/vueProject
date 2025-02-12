@@ -2,8 +2,16 @@ Vue.createApp(
   {  
      data(){
         return{
-        name :''
+         colors:{
+              redClass:'red',
+              blueClass: 'blue'
+         }
         }
+     },
+     methods:{
+      changeColor(){
+         
+      }
      }
    }
 ).mount('#app');
