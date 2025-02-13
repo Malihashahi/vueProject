@@ -24,14 +24,13 @@
 
   <div id="app">
     
-  <div 
-   class="div" 
-   :class="[colors.redClass ,colors.blueClass]"
-   
-   >
-    hello vue
-  </div>
-  </div>
+     <input v-model="name" type="text">
+     <button @click="toggleActive">Change Active</button>
+     <p>Name: {{ upperCase() }}</p>
+     <p>Active: {{ isActive }} </p>
+  
+  
+    </div>
 
 
 
