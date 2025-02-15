@@ -5,26 +5,18 @@
 <meta  http-equiv="X-UA-Compatible" content="IE=edg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>webpage</title>
-<style>
-  .div{
-     background: black;
-     color: white;
-     padding: 10px;
-  }
-  .red{
-     background:red;
-  }
-  .blue{
-    background: blue;
-  }
-
-</style>
 </head>
 <body>
 
   <div id="app">
-    {{name}}
-  <button @click="updateName">Update</button>
+    <form >
+      <label>Name </label>
+      <input v-model="formData.name" type="text"><hr>
+      <label >Message </label>
+      <textarea v-model="formData.message" cols="30" rows="10"></textarea>
+      <hr>
+      <button @click.prevent="submitForm">submit</button>
+    </form>
     </div>
 
 
