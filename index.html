@@ -11,7 +11,16 @@
   <div id="app">
     <form >
       <label>Name </label>
-      <input v-model="formData.name" type="text"><hr>
+      <input v-model="formData.name" type="text" ><hr>
+      <label>checkbox1</label>
+      <input v-model="formData.checkbox" type="checkbox" value="ch1">
+      <label>checkbox2 </label>
+      <input v-model="formData.checkbox" type="checkbox"  value="ch2"><hr>
+      <label>radio1</label>
+      <input v-model="formData.radio" type="radio" value="r1">
+      <label>radio2</label>
+      <input v-model="formData.radio" type="radio"  value="r2"><hr>
+
       <label >Message </label>
       <textarea v-model="formData.message" cols="30" rows="10"></textarea>
       <hr>

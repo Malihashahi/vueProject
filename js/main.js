@@ -4,7 +4,10 @@ Vue.createApp(
         return{
           formData:{
              name : '',
-              message : ''
+              message : '',
+              checkbox : [],
+              radio : [],
+              
           }
         }
         
