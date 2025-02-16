@@ -2,11 +2,13 @@ Vue.createApp(
   {  
      data(){
         return{
+         langs :['php','python','c'],
           formData:{
              name : '',
               message : '',
               checkbox : [],
               radio : [],
+              lang : []
               
           }
         }

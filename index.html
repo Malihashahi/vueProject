@@ -24,6 +24,14 @@
       <label >Message </label>
       <textarea v-model="formData.message" cols="30" rows="10"></textarea>
       <hr>
+      <select v-model="formData.lang" multiple>
+        <option  v-for="(lang ,index) in langs" :key="index">{{ lang}}</option>
+      </select>
+
+
+
+
+      <hr>
       <button @click.prevent="submitForm">submit</button>
     </form>
     </div>
