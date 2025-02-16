@@ -1,25 +1,9 @@
 Vue.createApp(
-  {  
-     data(){
-        return{
-         langs :['php','python','c'],
-          formData:{
-             name : '',
-              message : '',
-              checkbox : [],
-              radio : [],
-              lang : []
-              
-          }
-        }
-        
-     },
-     
-     methods:{
-      submitForm(){
-         console.log(this.formData)
-      }
-
-    
-   }}
+   {
+       data() {
+           return {
+               show: true
+           }
+       }
+   }
 ).mount('#app');
