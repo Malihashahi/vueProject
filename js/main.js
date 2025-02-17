@@ -1,8 +1,13 @@
 Vue.createApp(
-   {
+   {   
+       template:`
+       <div><h1>hello from template{{name}}</h1></div>
+       
+       ` ,
+
        data() {
            return {
-               show: true
+           name: 'Maliha Bahar'
            }
        }
    }
