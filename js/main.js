@@ -1,13 +1,4 @@
-const Home = {
-    template: `
-            <div> <h1>{{ name }}</h1> </div>
-        `,
-    data() {
-        return {
-            name: 'WebProg.ir'
-        }
-    }
-}
+import Home from "../components/Home.vue";
 
 
 const app = Vue.createApp(
